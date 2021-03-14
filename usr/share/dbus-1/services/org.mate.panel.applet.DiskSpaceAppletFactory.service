@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.mate.panel.applet.DiskSpaceAppletFactory
+Exec=/usr/share/mate-panel/applets/diskspaceapplet.py
+
+

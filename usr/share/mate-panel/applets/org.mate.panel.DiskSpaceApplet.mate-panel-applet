@@ -1,0 +1,14 @@
+[Applet Factory]
+Id=DiskSpaceAppletFactory
+InProcess=false
+Location=/usr/share/mate-panel/applets/diskspaceapplet.py
+Name=Disk Space Applet Factory
+Description=A MATE Python Applet example factory
+ 
+[DiskSpaceApplet]
+Name=Disk Space Applet
+Description=Simple Disk Space Applet with text output
+Icon=mate
+MateComponentId=OAFIID:MATE_DiskSpaceApplet
+
+
