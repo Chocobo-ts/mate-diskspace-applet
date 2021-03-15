@@ -39,13 +39,12 @@ def get_value():
       subline = subline[0].split()
       dev = subline[0]
       devname = dev.split(b'/')[-1]
-      label = subprocess.check_output('blkid -s LABEL -o value %s' % dev.decode(),shell=True)
+      label = subprocess.check_output('udisksctl info -b %s | grep IdLabel | cut -f2 -d":"' % dev.decode(),shell=True).strip()
       if label:
          name = label.rstrip()
       else:
          name = mpoint
       result = result + name.decode() + ': <b>' + subline[-1].decode() + '%</b>    '
-#    result = result[:-1]
     return result
 
 
