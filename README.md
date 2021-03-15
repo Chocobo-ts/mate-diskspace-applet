@@ -1,5 +1,5 @@
 # mate-diskspace-applet
-Simple panel applet for mate with text output about disk space usage  
+Simple mate-panel applet with text output about disk space usage  
 
 ![Example](https://i.imgur.com/Ny5TbeA.png)
 
